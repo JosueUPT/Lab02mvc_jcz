@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Lab02_MVC_Chambilla_B.Models.ClsPersona>
+@{
+    Layout = null;
+    int numero = 1;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ListarTodos</title>
+</head>
+<body>
+    <div> 
+        <center>
+            <h1>Lista de Personas</h1>
+            <br />
+            <table border="1" bordercolor="#0000FF">
+                <tr>
+                    <th>Nro</th>
+                    <th>DNI</th>
+                    <th>Apellidos</th>
+                    <th>Edad</th>
+                    <th>Nombre</th>
+                    <th>Sexo</th>
+                    <th>Talla</th>
+                    <th>Peso</th>
+                </tr>
+
+                @foreach(var item in Model)
+                 {
+                    <tr>
+                        <td>@(numero++)</td>
+                        <td>@Html.DisplayFor(model => item.DNI) </td>
+                        <td>@Html.DisplayFor(model => item.Apellidos) </td>
+                        <td>@Html.DisplayFor(model => item.edad) </td>
+                        <td>@Html.DisplayFor(model => item.Nombre) </td>
+                        <td>@Html.DisplayFor(model => item.Sexo) </td>
+                        <td>@Html.DisplayFor(model => item.talla) </td>
+                        <td>@Html.DisplayFor(model => item.peso) </td>
+
+                    </tr>
+                 }
+            </table>
+        </center>
+    </div>
+</body>
+</html>

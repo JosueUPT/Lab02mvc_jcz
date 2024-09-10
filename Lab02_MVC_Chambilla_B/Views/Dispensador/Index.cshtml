@@ -1,0 +1,29 @@
+﻿@model Lab02_MVC_Chambilla_B.Models.ClsDispensador
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <center>
+            <h1>Dispensador de Billetes</h1>
+            <br />
+            <br />
+            @using (Html.BeginForm("CalcularBilletes", "Dispensador", FormMethod.Post))
+            {
+                @Html.Label("Ingrese Monto: ")<br /><br />
+                @Html.EditorFor(model => model.monto) <br /><br />
+
+                <input type="submit" value="Calcular" />
+            }
+        </center>
+    </div>
+</body>
+</html>

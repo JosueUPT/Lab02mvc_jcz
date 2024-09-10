@@ -1,0 +1,46 @@
+﻿@model Lab02_MVC_Chambilla_B.Models.ClsDispensador
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CalcularBilletes</title>
+</head>
+<body>
+    <div> 
+        <center>
+            <h1>Dispensador de Billetes</h1>
+            <br />
+            <label>Monto: </label>@Model.monto<br />
+            <br />
+            <label>Billete de 100: </label>@Model.b100<br />
+            <label>Billete de 50: </label>@Model.b50<br />
+            <label>Billete de 20: </label>@Model.b20<br />
+            <label>Billete de 10: </label>@Model.b10<br />
+
+            <label>Moneda de 5: </label>@Model.m5<br />
+            <label>Moneda de 2: </label>@Model.m2<br />
+            <label>Moneda de 1: </label>@Model.m1<br />
+
+            <label>Centimos de 01: </label>@Model.c01<br />
+            <label>Centimos de 02: </label>@Model.c02<br />
+            <label>Centimos de 05: </label>@Model.c05<br />
+
+            <br /><br />
+            <label>Cantidad: </label> @Model.cantidad
+            <br /><br />
+            <label>Cantidad Billetes: </label> @Model.cantidadb
+            <br /><br />
+            <label>Cantidad Monedas: </label> @Model.cantidadm
+            <br /><br />
+            <label>Cantidad Centimos: </label> @Model.cantidadc
+            <br /><br />
+            <a href="Index"><< Retornar</a>
+        </center>
+    </div>
+</body>
+</html>

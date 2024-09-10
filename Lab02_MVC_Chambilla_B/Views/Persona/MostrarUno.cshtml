@@ -1,0 +1,27 @@
+﻿@model Lab02_MVC_Chambilla_B.Models.ClsPersona
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MostrarUno</title>
+</head>
+<body>
+    <div>
+        <h1>Mostrar uno</h1>
+        <br />
+        <label>DNI: </label>@Model.DNI<br />
+        <label>Apellidos: </label>@Model.Apellidos<br />
+        <label>Nombres: </label>@Model.Nombre<br />
+        <label>Edad: </label>@Model.edad<br />
+        <label>Sexo: </label>@Model.Sexo<br />
+        <label>Talla: </label>@Model.talla<br />
+        <label>Peso: </label>@Model.peso<br />
+
+    </div>
+</body>
+</html>
